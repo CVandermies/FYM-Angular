@@ -46,6 +46,10 @@ export class RestService {
     return this.http.get<Categorie>(endpoint + 'cat/' + id);
   }
 
+  addCategory(category: Categorie): Observable<any>{
+    return this.http.post(endpoint + 'cat/add', category);
+  }
+
   //////////////////////
   //___partie films___//
   //////////////////////
