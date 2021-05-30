@@ -1,0 +1,6 @@
+<h2>Editer cette catégorie</h2>
+<div class="form-group">
+      <input class="form-control" [(ngModel)]="category.label" type="text" placeholder="Label" >
+      <input class="form-control" [(ngModel)]="category.description" type="text" placeholder="Description" rows="3">
+</div>
+<button class="btn btn-success" (click)="updateCategory()">Enregistrer</button> 

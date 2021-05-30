@@ -50,6 +50,14 @@ export class RestService {
     return this.http.post(endpoint + 'cat/add', category);
   }
 
+  updateCategory(category: Categorie): Observable<any>{
+    return this.http.put<Categorie>(endpoint + 'cat/' + category.id, category);
+  }
+
+  deleteCategory(id: number): Observable<any>{
+    return this.http.delete(endpoint+ 'cat/' + id);
+  }
+
   //////////////////////
   //___partie films___//
   //////////////////////

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
+import { CategoryEditComponent } from './category-edit/category-edit.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,11 @@ const routes: Routes = [
 {
   path: 'category-add',
   component: CategoryAddComponent,
+},
+
+{
+  path: 'category-edit/:id',
+  component: CategoryEditComponent,
 },
 
 //on met pathmatch sur full pour ne pas créer d'endless loop 

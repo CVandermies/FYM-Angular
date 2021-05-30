@@ -1,8 +1,10 @@
-<div style="flex: 1; ">
-  <button (click)='add()' style='flex:1;align-items: center; justify-content: center;'>Ajouter catégorie</button>
-</div>
+
+  <br><button class="btn btn-lg btn-dark" (click)='add()' >Ajouter catégorie</button><br><br>
+
 
 <ul>
-    <li *ngFor="let c of categories">{{ c.label }}</li>
+    <li *ngFor="let c of categories">{{ c.label }}
+    <button class="btn btn-primary" routerLink='/category-edit/{{c.id}}'>Modifier</button>
+  </li>
 </ul>
 

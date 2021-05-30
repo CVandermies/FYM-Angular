@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
+import { CategoryEditComponent } from './category-edit/category-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
-    CategoryAddComponent
+    CategoryAddComponent,
+    CategoryEditComponent
   ],
   imports: [
     BrowserModule,
