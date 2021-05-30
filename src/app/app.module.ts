@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
+import { MovieEditComponent } from './movie-edit/movie-edit.component';
+import { MovieAddComponent } from './movie-add/movie-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
     CategoryAddComponent,
-    CategoryEditComponent
+    CategoryEditComponent,
+    MovieEditComponent,
+    MovieAddComponent
   ],
   imports: [
     BrowserModule,

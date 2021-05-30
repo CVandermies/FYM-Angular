@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
+import { MovieEditComponent } from './movie-edit/movie-edit.component';
 
 const routes: Routes = [
 
@@ -19,6 +20,11 @@ const routes: Routes = [
 {
   path: 'category-edit/:id',
   component: CategoryEditComponent,
+},
+
+{
+  path:'movie-edit/:id',
+  component: MovieEditComponent,
 },
 
 //on met pathmatch sur full pour ne pas créer d'endless loop 

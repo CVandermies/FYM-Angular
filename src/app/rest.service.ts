@@ -68,4 +68,12 @@ export class RestService {
   getMovie(id: number): Observable<any>{
     return this.http.get<Movie>(endpoint + 'fym/' + id);
   }
+
+  updateMovie(category: Categorie): Observable<any>{
+    return this.http.put<Categorie>(endpoint+ 'fym/' + category.id, category);
+  }
+
+  deleteMovie(id: number): Observable<any>{
+    return this.http.delete(endpoint + 'fym/' + id);
+  }
 }

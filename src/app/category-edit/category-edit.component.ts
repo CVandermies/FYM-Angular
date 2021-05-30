@@ -14,7 +14,7 @@ export class CategoryEditComponent implements OnInit {
 
   constructor(public rest: RestService, private route: ActivatedRoute, private router: Router) {
     this.category = { id: 0, label: '', description: '', movies: []};
-    this.movies = {id: 0, title: '', content:'', rating: '', image:'', category_id: ''};
+    this.movies = {id: 0, title: '', content:'', rating: 0, image:'', category_id: 0};
    }
 
   ngOnInit(): void {
@@ -45,5 +45,7 @@ export class CategoryEditComponent implements OnInit {
       }
     )
   }
+
+  
 
 }

@@ -1,4 +1,4 @@
-<h2>Editer cette catégorie</h2>
+<h2>Editer la catégorie: {{category.label}}</h2><b>
 <div class="form-group">
     <label for='formLabel' class="form-label mt-4">Label de la catégorie</label>
       <input class="form-control" [(ngModel)]="category.label" type="text" id='formLabel' placeholder="Label" >
@@ -19,6 +19,7 @@
               
                 <div class="card-body">
                 <p class="card-text">{{ m.content}}</p>
+                <button class="btn btn-info" routerLink='/movie-edit/{{m.id}}'>Voir</button>
                 </div>
             
         </div>
