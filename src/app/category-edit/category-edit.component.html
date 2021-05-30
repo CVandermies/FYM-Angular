@@ -9,8 +9,12 @@
 <button class="btn btn-danger" (click)="deleteCategory(category.id)">Supprimer la catégorie</button> 
 <br><br>
 
+
+
+
 <ul>
     <h2>Films de cette catégorie</h2>
+    <button class="btn btn-lg btn-dark" routerLink="/movie-add/{{category.id}}">Nouveau film</button>
     <li *ngFor= "let m of category.movies">
 
         <div class="card mb-3">

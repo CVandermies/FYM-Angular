@@ -23,7 +23,7 @@ export interface Movie {
   id: number;
   title : string;
   content: string;
-  rating: Float32Array;
+  rating: number;
   image:string;
   category_id: number;
 }
@@ -69,8 +69,12 @@ export class RestService {
     return this.http.get<Movie>(endpoint + 'fym/' + id);
   }
 
-  updateMovie(category: Categorie): Observable<any>{
-    return this.http.put<Categorie>(endpoint+ 'fym/' + category.id, category);
+  addMovie(id: number, movie: Movie): Observable<any>{
+    return this.http.post(endpoint + 'fym/' + id, movie);
+  }
+
+  updateMovie(movie: Movie): Observable<any>{
+    return this.http.put<Movie>(endpoint+ 'fym/' + movie.id, movie);
   }
 
   deleteMovie(id: number): Observable<any>{

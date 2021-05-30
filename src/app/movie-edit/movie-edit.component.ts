@@ -13,7 +13,7 @@ export class MovieEditComponent implements OnInit {
   movie: any;
 
   constructor(public rest: RestService, private route: ActivatedRoute, private router: Router) {
-    this.movie = { id: 0, description: '', DueDate: new Date() , Done: false};
+    this.movie = { id: 0, title:'', content: '' , rating: 0, image:''};
    }
 
   ngOnInit(): void {

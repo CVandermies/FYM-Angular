@@ -11,6 +11,7 @@ import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
 import { MovieEditComponent } from './movie-edit/movie-edit.component';
 import { MovieAddComponent } from './movie-add/movie-add.component';
+import { MoviesListComponent } from './movies-list/movies-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MovieAddComponent } from './movie-add/movie-add.component';
     CategoryAddComponent,
     CategoryEditComponent,
     MovieEditComponent,
-    MovieAddComponent
+    MovieAddComponent,
+    MoviesListComponent
   ],
   imports: [
     BrowserModule,

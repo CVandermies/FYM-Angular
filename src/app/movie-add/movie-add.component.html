@@ -1,0 +1,14 @@
+<h2>Ajouter ce film</h2>
+<div class="form-group">
+
+    <label for='formTitle' class="form-label mt-4">Titre du film</label>
+        <input class="form-control" [(ngModel)]="movie.title" type="text" id='formTitle' placeholder="Titre">
+      
+    <label for='formContent' class="form-label mt-4">Résumé du film</label>
+        <textarea class="form-control" [(ngModel)]="movie.content" id='formContent' placeholder="Description" rows="3"></textarea>
+
+    <label for='formImage' class="form-label mt-4">Image</label>
+        <input class="form-control" [(ngModel)]="movie.image" type="text" id='formImage' placeholder="Image">
+
+</div>
+        <button class="btn btn-success" (click)= "addMovie()"> Ajouter </button>

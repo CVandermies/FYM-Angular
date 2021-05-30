@@ -1,6 +1,6 @@
 <div>
     <h2> Category add</h2>
-    <input type='text' [(ngModel)]="category.label" placeholder = "Label (Required)" required minlength="2"><br>
-    <input type='text' [(ngModel)]="category.description" placeholder = "Description" ><br>
+    <input class="form-control" type='text' [(ngModel)]="category.label" placeholder = "Label (Required)" required minlength="2"><br>
+    <input class="form-control" type='text' [(ngModel)]="category.description" placeholder = "Description" ><br>
     <button class="btn btn-success" (click)= "addCategory()"> Ajouter </button>
 </div>

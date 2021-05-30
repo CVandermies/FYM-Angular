@@ -46,6 +46,9 @@ export class CategoryEditComponent implements OnInit {
     )
   }
 
+  addForm(id:any) {
+    this.router.navigate(['/movie-add/' + id]);
+  }
   
 
 }

@@ -12,7 +12,7 @@
 
     <label for='formRating' class="form-label mt-4">Note</label>
         <input class="form-control" [(ngModel)]="movie.rating" type="text" id='formRating' placeholder="Note">
-    
+
   
     
     
@@ -30,7 +30,8 @@
                 <div class="card-body">
                 <p class="card-text">{{ movie.content}}</p>
                 </div>
-                <div class="card-footer text-muted">Note: <b>{{ movie.rating}}/5</b></div>
+                <div class="card-footer text-muted" *ngIf="movie.rating>0;else pas_de_note">Note: <b>{{ movie.rating}}/5</b></div>
+                <ng-template #pas_de_note><div class="card-footer text-muted">Il n'y a pas de note pour ce film</div></ng-template>
             
         </div>
 </div>

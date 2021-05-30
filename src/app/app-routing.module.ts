@@ -4,6 +4,7 @@ import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
 import { MovieEditComponent } from './movie-edit/movie-edit.component';
+import { MovieAddComponent } from './movie-add/movie-add.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,11 @@ const routes: Routes = [
 {
   path:'movie-edit/:id',
   component: MovieEditComponent,
+},
+
+{
+  path:'movie-add/:id',
+  component: MovieAddComponent,
 },
 
 //on met pathmatch sur full pour ne pas créer d'endless loop 
